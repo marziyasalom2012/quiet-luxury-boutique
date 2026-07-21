@@ -116,7 +116,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onGenderSelect={(gender) => setActiveGenderTab(gender)} />
 
       {/* Modals and Side Drawers */}
       <SearchModal 

@@ -126,7 +126,7 @@ export default function GenderShowcase({ onAddToCart, activeTab = 'men', setActi
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           <AnimatePresence mode="wait">
             {products
               .filter(p => p.gender === activeTab)
@@ -154,7 +154,7 @@ export default function GenderShowcase({ onAddToCart, activeTab = 'men', setActi
                     {/* Add to cart overlay button */}
                     <button 
                       onClick={() => onAddToCart(product)}
-                      className="absolute bottom-6 left-6 right-6 bg-luxury-cream text-luxury-charcoal py-4 text-[10px] uppercase tracking-widest font-mono border border-luxury-sand/50 shadow-lg transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 hover:bg-luxury-charcoal hover:text-luxury-cream hover:border-luxury-charcoal z-20 flex items-center justify-center gap-2"
+                      className="absolute bottom-3 left-3 right-3 lg:bottom-6 lg:left-6 lg:right-6 bg-luxury-cream/90 lg:bg-luxury-cream text-luxury-charcoal py-2.5 lg:py-4 text-[9px] lg:text-[10px] uppercase tracking-widest font-mono border border-luxury-sand/50 shadow-lg transition-all duration-500 hover:bg-luxury-charcoal hover:text-luxury-cream hover:border-luxury-charcoal z-20 flex items-center justify-center gap-2 transform translate-y-0 lg:translate-y-4 opacity-100 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
                     >
                       <Plus size={12} />
                       Savatga qo'shish

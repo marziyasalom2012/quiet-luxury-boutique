@@ -52,7 +52,7 @@ export default function BookingModal({ isOpen, onClose, onAddAppointment }) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[101] m-auto w-[90%] max-w-[480px] h-fit max-h-[90vh] bg-luxury-cream border border-luxury-gold/20 p-8 shadow-2xl flex flex-col justify-between overflow-y-auto"
+            className="fixed inset-0 z-[101] m-auto w-[90%] max-w-[480px] h-fit max-h-[90vh] bg-luxury-cream border border-luxury-gold/20 p-6 md:p-8 shadow-2xl flex flex-col justify-between overflow-y-auto"
           >
             {/* Header */}
             <div className="flex justify-between items-center pb-4 border-b border-luxury-sand/50 mb-6">

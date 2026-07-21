@@ -44,7 +44,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'tween', duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed top-0 right-0 h-full w-full max-w-[420px] bg-luxury-cream z-[101] shadow-2xl p-8 overflow-y-auto flex flex-col justify-between"
+            className="fixed top-0 right-0 h-full w-full max-w-[420px] bg-luxury-cream z-[101] shadow-2xl p-6 md:p-8 overflow-y-auto flex flex-col justify-between"
           >
             {/* Top Close Button */}
             <div>

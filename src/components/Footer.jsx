@@ -19,7 +19,7 @@ const InstagramIcon = ({ size = 14, className = "" }) => (
   </svg>
 );
 
-export default function Footer() {
+export default function Footer({ onGenderSelect }) {
   return (
     <footer className="bg-luxury-onyx text-luxury-cream/80 py-16 border-t border-luxury-gold/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -45,8 +45,32 @@ export default function Footer() {
               Katalog
             </h4>
             <ul className="space-y-3 text-xs font-light">
-              <li><a href="#erkaklar" className="hover:text-luxury-gold transition-colors duration-300">Erkaklar kolleksiyasi</a></li>
-              <li><a href="#ayollar" className="hover:text-luxury-gold transition-colors duration-300">Ayollar kolleksiyasi</a></li>
+              <li>
+                <button 
+                  onClick={() => {
+                    if (onGenderSelect) {
+                      onGenderSelect('men');
+                      document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="hover:text-luxury-gold transition-colors duration-300 text-left font-light"
+                >
+                  Erkaklar kolleksiyasi
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    if (onGenderSelect) {
+                      onGenderSelect('women');
+                      document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="hover:text-luxury-gold transition-colors duration-300 text-left font-light"
+                >
+                  Ayollar kolleksiyasi
+                </button>
+              </li>
               <li><a href="#mahsulot" className="hover:text-luxury-gold transition-colors duration-300">Eksklyuziv mahsulot</a></li>
               <li><a href="#kolleksiya" className="hover:text-luxury-gold transition-colors duration-300">Yangi mavsum</a></li>
             </ul>
