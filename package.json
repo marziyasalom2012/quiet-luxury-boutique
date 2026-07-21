@@ -11,7 +11,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^5.2.1",
+    "express": "^4.22.2",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.25.0",
     "react": "^19.2.7",
